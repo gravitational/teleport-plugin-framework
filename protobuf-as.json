@@ -1,0 +1,7 @@
+{
+    "mode": "multi",
+    "targetFileName": "teleport.ts",
+    "oneOf": {
+        "events.OneOf.Event": "type"
+    }
+}

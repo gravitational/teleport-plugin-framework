@@ -1,0 +1,26 @@
+{
+    "type": "types.OneOf",
+    "description": "Create access request",
+    "data": {
+        "AccessRequestCreate": {
+            "Metadata": {
+                "Index": 1,
+                "ID": "{{ uuid }}",
+                "Type": "access_request.create",
+                "ClusterName": "test-cluster",
+                "Time": "{{ time }}"
+            },
+            "User": {
+                "Login": "foo",
+                "User": "foo"
+            },
+            "Resource": {
+                "Name": "db.users"
+            },
+            "Roles": ["test-user"],
+            "RequestID": "{{ uuid }}",
+            "RequestState": "PENDING",
+            "Reason": "Need access"
+        }
+    }
+}

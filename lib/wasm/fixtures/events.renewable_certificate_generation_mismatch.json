@@ -1,0 +1,25 @@
+{
+    "type": "types.OneOf",
+    "description": "Renewable certificate's generation counter is invalid",
+    "data": {
+        "RenewableCertificateGenerationMismatch": {
+            "Metadata": {
+                "Index": "1",
+                "Type": "cert.generation_mismatch",
+                "ID": "{{ uuid }}",
+                "Code": "{{ uuid }}",
+                "Time": "{{ time }}",
+                "ClusterName": "test-cluster"
+            },
+            "UserMetadata": {
+                "User": "foo",
+                "Login": "foo",
+                "Impersonator": "foo",
+                "AWSRoleARN": "arn:aws:iam::account:root",
+                "AccessRequests": [
+                    "{{ uuid }}"
+                ]
+            }
+        }
+    }
+}
